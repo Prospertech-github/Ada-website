@@ -25,6 +25,7 @@ html, body{
   height: 100%;
   line-height: 1.4;
   color: var(--font-color);
+  color: #333;
 }
 
 p{
@@ -62,15 +63,19 @@ img{
 }
 .btn-primary{
   background: var(--secondary-color);
-    background: #D40C0C;
+  background: #D40C0C;
   color: var(--utility-color);
+  color: #f4f4f4;
 }
 .btn-secondary{
   background: var(--utility-color);
+  background: #f4f4f4;
   color: var(--secondary-color);
+  color: #D40C0C;
 }
 .color-heading{
   color: var(--secondary-color);
+  color: #D40C0C;
 }
 .center-heading{
   position: relative;
@@ -125,11 +130,18 @@ img{
 }
 
 .bg-light{ background: #e5e5e5; }
-.bg-dark{ background: var(--primary-color); }
-.bg-primary{ background: var(--font-color); }
+.bg-dark{ 
+  background: var(--primary-color); 
+  background: #232325;
+}
+.bg-primary{ 
+  background: var(--font-color); 
+  background: #333;
+}
 
 .icons{
   background: var(--secondary-color);
+  background: #D40C0C;
   color: #f4f4f4;
   font-size: 20px;
   padding: 1rem;
@@ -160,11 +172,15 @@ img{
 }
 .box:hover{
   background: var(--secondary-background);
+  background: rgba(213, 12, 12, 0.8);
   color: var(--utility-color);
+  color: #f4f4f4;
 }
 .box:hover i{
   background: var(--utility-color);
+  background: #f4f4f4;
   color: var(--secondary-color);
+  color: #D40C0C;
 }
 .padding-class{ padding: 60px; }
 .padding-class-2{ padding: 40px 60px; }
@@ -199,6 +215,7 @@ img{
 }
 .navbar a{
   color: var(--utility-color);
+  color: #f4f4f4;
   padding: 10px 20px;
   margin: 0 5px;
   text-transform: uppercase;
@@ -207,6 +224,7 @@ img{
 }
 .navbar a:hover{
   border-bottom: 2px solid var(--utility-color);
+  border-bottom: 2px solid #f4f4f4;
 }
 
 /* Showcase content */
@@ -238,6 +256,7 @@ img{
 }
 .showcase-container .txt-col{
   color: var(--utility-color);
+  color: #f4f4f4;
 }
 .txt-col h4{
   font-weight: 100;
@@ -265,6 +284,7 @@ img{
 }
 .about-img{
   background: var(--secondary-color);
+  background: #D40C0C;
   border-radius: 5px;
 }
 .about-img > div img{
@@ -304,6 +324,7 @@ img{
   height: 10px;
   border-radius: 5px;
   background: var(--primary-color);
+  background: #232325;
   margin-bottom: 10px;
 }
 .skill-input div{
@@ -362,7 +383,7 @@ img{
 }
 .portfolio p{
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -394,6 +415,7 @@ img{
 /* Hire Section */
 .hire-section{
   background: var(--secondary-background);
+  background: rgba(213, 12, 12, 0.8);
 }
 .hire-section >div{
   display: -webkit-box;
@@ -408,6 +430,7 @@ img{
 }
 .hire-section >div div:first-child{
   color: var(--utility-color);
+  color: #f4f4f4;
   display: inline-block;
   width: 35%;
   padding: 10px;
@@ -426,9 +449,11 @@ img{
 .contact{
   padding: 0 60px;
   background: var(--primary-color);
+  background: #232325;
 }
 .center-row{
   background: var(--primary-color);
+  background: #232325;
   position: relative;
 }
 .center-row::after{
@@ -505,6 +530,7 @@ img{
 }
 .contact-row-1 > div i{
   color: var(--secondary-color);
+  color: #D40C0C;
   margin-top: 5px;
 }
 .contact-row-1 > div div{
@@ -536,7 +562,7 @@ img{
 .input-row{
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
 }
 .input-row .form-controls{
   -webkit-box-flex: 1;
@@ -561,6 +587,7 @@ img{
 }
 .form-controls input:focus{
   outline-color: var(--secondary-background);
+  outline-color: rgba(213, 12, 12, 0.8);
 }
 
 .contact-form .button{
@@ -602,6 +629,7 @@ img{
 }
 .footer a:hover{
   color: var(--secondary-color);
+  color: #D40C0C;
 }
 .footer .social > *{
   margin-right: 30px;

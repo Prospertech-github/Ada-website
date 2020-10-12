@@ -8,6 +8,9 @@
     font-size: 2rem;
   }
   .navbar{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 5px 10px;
   }
@@ -26,9 +29,18 @@
   .showcase-container .txt-col{
     width: 335px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .showcase-container .txt-col h1{
@@ -81,7 +93,12 @@
   
   /* Services Section */
   #services > div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 15px 0;
   }
@@ -103,6 +120,9 @@
 
   /* Hire Section */
   #hire.hire-section >div{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   #hire.hire-section >div div{
@@ -114,6 +134,19 @@
   /* Contact section */
   #contact .contact-content{
     display: block;
+  }
+  .contact-row-2 > div{
+    width: 100%;
+  }
+  #contact .contact-form{
+   width: 90%;
+   margin: 0 auto;
+  }
+  .contact-form .input-row{
+    display: block;
+  }
+  .contact-form .input-row .form-controls{
+    width: 100%;
   }
 
 
@@ -147,16 +180,33 @@
   #showcase .showcase-container{
     margin: auto 0;
     width: 100%;
+    height: 50vh;
   }
   #showcase .showcase-container .img-col{
-    flex-basis: 230px;
+    /* flex-basis: 230px;
+    flex-basis: 522px; */
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  #showcase .showcase-container .img-col img{
+    width: 100%;
   }
   .showcase-container .txt-col{
     width: 230px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 50px;
   }
@@ -196,7 +246,9 @@
     font-size: 10px;
   }
   #showcase .showcase-container .img-col{
-    flex-basis: 358px;
+    -ms-flex-preferred-size: 500px;
+    flex-basis: 500px;
+    /* flex: 1; */
   }
 
   /* About section */
