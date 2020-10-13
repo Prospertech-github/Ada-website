@@ -13,6 +13,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 5px 10px;
+    margin: 5px 0;
   }
   .navbar li a{
     padding: 5px 10px;
