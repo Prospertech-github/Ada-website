@@ -60,6 +60,7 @@ img{
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 .btn-primary{
   background: var(--secondary-color);
