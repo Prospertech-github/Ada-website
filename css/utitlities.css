@@ -7,31 +7,31 @@
   body h1,h2{
     font-size: 2rem;
   }
-  .navbar{
+  header .navbar{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 10px;
+    height: 90px;
   }
-  .navbar .logo{
-    margin: 2px 0 0;
+  .navbar li{
+    padding: 5px;
   }
   .navbar li a{
-    padding: 5px 10px;
-    margin: 0;
+    padding:  10px;
+    margin: 0 10px;
     font-size: 16px;
   }
-  header.showcase{
-    padding: 70px 10px;
+  header#showcase{
+    padding: 70px 10px 10px;
   }
   #showcase .showcase-container{
-    margin: auto 0;
     width: 100%;
+    height: 50vh;
   }
   .showcase-container .txt-col{
-    width: 335px;
-    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -39,22 +39,26 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
   .showcase-container .txt-col h1{
-    margin: 0 0 3px;
-    font-size: 30px;
+    margin: 5px 0;
+    font-size: 2.5rem;
   }
   .showcase-container .txt-col p{
-    font-size: 16px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   .showcase-container .txt-col a{
     padding: 10px 15px;
+  }
+  .showcase-container .img-col{
+    display: none;
   }
 
   /* About Section */
@@ -170,34 +174,33 @@
   }
 
   /* Header */
-  .navbar{
-    padding: 5px;
+  header .navbar{
+    height: 80px;
+  }
+  .navbar li{
+    margin: 0;
+    padding: 0; 
   }
   .navbar li a{
     padding: 3px 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
-  header.showcase{
-    padding: 70px 10px;
+  header#showcase{
+    padding: 80px 10px 40px;
   }
   #showcase .showcase-container{
     margin: auto 0;
     width: 100%;
-    height: 50vh;
+    height: 35vh;
   }
   #showcase .showcase-container .img-col{
-    /* flex-basis: 230px;
-    flex-basis: 522px; */
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    display: none;
   }
   #showcase .showcase-container .img-col img{
     width: 100%;
   }
   .showcase-container .txt-col{
-    width: 230px;
-    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -205,20 +208,20 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 50px;
+    padding: 40px 0 0;
   }
   .showcase-container .txt-col h1{
-    margin: 0 0 10px;
-    font-size: 20px;
+    margin: 0 0 5px;
+    font-size: 2rem;
   }
   .showcase-container .txt-col p{
-    font-size: 12px;
+    font-size: 1rem;
   }
   .showcase-container .txt-col a{
     padding: 10px 15px;
@@ -244,14 +247,20 @@
 
 @media(max-width: 380px){
   /* Header */
-  .navbar li a{
-    padding: 3px 5px;
+  #showcase .navbar li{
+    /* border: 2px solid blue; */
+    padding: 5px;
+    margin: 0;
+  }
+   #showcase .navbar li a{
+    /* border: 2px solid green; */
+    /* padding: 3px 5px; */
+    padding: 3px;
+    margin: 0;
     font-size: 10px;
   }
   #showcase .showcase-container .img-col{
-    -ms-flex-preferred-size: 500px;
-    flex-basis: 500px;
-    /* flex: 1; */
+    display: none;
   }
 
   /* About section */
